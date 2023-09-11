@@ -5,3 +5,41 @@
         clear: both;
     }
 }
+
+@mixin abscenter {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+
+
+// MEDIA QUERY MANAGER
+
+// 0-600px :       phone
+// 600-900px :       tab-port
+// 900-1200px :       tab-landscape
+// 1200-1800px :        normal desktop
+// 1800px +      :        big-desktop
+
+// breakpoints arguments choices
+
+// phone
+// tab-port
+// tab-land
+// big-desktop
+
+@mixin respond ($breakpoint){
+    @if $breakpoint == phone {
+        @media (max-width: 600px) { @content };
+    }
+    @if $breakpoint == tab-port {
+        @media (max-width: 600px) { @content };
+    }
+    @if $breakpoint == tab-land {
+        @media (max-width: 600px) { @content };
+    }
+    @if $breakpoint == big-desktop {
+        @media (max-width: 600px) { @content };
+    }
+}
