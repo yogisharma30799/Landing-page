@@ -384,7 +384,7 @@ body {
       box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.8);
       outline: 1.5rem solid #55c57a; }
   .composition:hover .composition__photo:not(:hover) {
-    transform: scale(0.6); }
+    transform: scale(0.9); }
 
 .feature-box {
   padding: 2.5rem;
@@ -447,6 +447,9 @@ body {
   width: 90%;
   display: block;
   transition: all 0.3s; }
+  @media (max-width: 56.25em) {
+    .form__input {
+      width: 100%; } }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
@@ -472,6 +475,10 @@ body {
 .form__radio-group {
   width: 49%;
   display: inline-block; }
+  @media (max-width: 56.25em) {
+    .form__radio-group {
+      width: 100%;
+      margin-bottom: 2rem; } }
 
 .form__radio-input {
   display: none; }
